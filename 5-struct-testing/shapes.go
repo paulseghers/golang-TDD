@@ -7,6 +7,11 @@ type Rectangle struct {
 	Height float64
 }
 
+type Shape interface {
+	Area() float64
+	Perimeter() float64
+}
+
 type Circle struct {
 	Radius float64
 }
