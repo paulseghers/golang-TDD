@@ -40,6 +40,8 @@ func TestAdd(t *testing.T) {
 	})
 }
 
+func TestDelete()
+
 // test helpers --------------------------------------------------------------
 func assertError(t testing.TB, got, want error) {
 	t.Helper()
