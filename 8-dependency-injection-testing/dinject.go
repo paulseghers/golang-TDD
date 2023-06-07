@@ -13,7 +13,7 @@ func Greet(writer io.Writer, name string) {
 }
 
 func httpResGreeter(w http.ResponseWriter, r *http.Request) {
-	Greet(w, "world")
+	Greet(w, "CHUNGUS")
 }
 
 func main() {
