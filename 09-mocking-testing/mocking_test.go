@@ -19,4 +19,8 @@ Go!`
 	if got != want {
 		t.Errorf("got %q want %q", got, want)
 	}
+
+	if sleeper.Calls != 3 { //checks if the sleeper was called 3 times
+		t.Errorf("not sleepy enough, want 3 got %d", sleeper.Calls)
+	}
 }
