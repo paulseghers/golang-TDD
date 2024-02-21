@@ -10,7 +10,7 @@ func slowStubWebsiteChecker(_ string) bool {
 	return true
 }
 
-func BenchmarkCheckWebsite(b testing.B) {
+func BenchmarkCheckWebsite(b *testing.B) {
 	urls := make([]string, 100)
 	for i := 0; i < len(urls); i++ {
 		urls[i] = "http://a.url"
